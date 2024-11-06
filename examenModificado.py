@@ -6,7 +6,7 @@ musica=[]
 
 #Agregamos los datos del archivo playlist.txt al diccionario
 def agregarMusicaArchivo():
-    fichero=open("playlist2.txt","r")
+    fichero=open("playlistPepe.txt","r")
     for linea in fichero:
         datos={}
         cancion,cantante,genero=linea.split("-")
@@ -42,11 +42,6 @@ def eliminarCanciones():
         print("================================")
         print("La cancion no se encuentra en la lista")
 
-#Contar las canciones que hay en el dicccionario
-def contarCanciones():
-    print("================================")
-    print("Numero de canciones de la lista:")
-    print(len(musica))
 
 #Buscar canciones por cantante
 def buscarCancionesporCantante():
